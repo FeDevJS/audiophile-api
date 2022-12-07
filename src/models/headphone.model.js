@@ -8,7 +8,19 @@ const headphoneSchema = mongoose.Schema({
   id: {
     type: String,
     required: true
-  }
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  features: {
+    type: String,
+    required: true
+  },
+  contains: {
+    type: Array,
+    required: true
+  },
 });
 
 module.exports = mongoose.model('headphones', headphoneSchema);
