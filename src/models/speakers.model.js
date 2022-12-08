@@ -21,6 +21,14 @@ const speakerSchema = mongoose.Schema({
     type: Array,
     required: true
   },
+  price: {
+    type: Number,
+    required: true
+  },
+  gallery: {
+    type: Array,
+    required: true
+  }
 });
 
 module.exports = mongoose.model('speakers', speakerSchema);

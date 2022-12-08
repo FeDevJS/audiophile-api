@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const headphoneSchema = mongoose.Schema({
+const earphoneSchema = mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -31,4 +31,4 @@ const headphoneSchema = mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('headphones', headphoneSchema);
+module.exports = mongoose.model('earphones', earphoneSchema);
